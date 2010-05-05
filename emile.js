@@ -62,7 +62,7 @@
                     if (time > finish) {
                     clearInterval(interval);
                         if(cb){
-                            // Call the "after" method, then the actuall callback.
+                            // Call the "after" method, then the actual callback.
                             opts.after && opts.after();
                             // Mad hackish, son!
                             setTimeout(function(){ cb(); }, 1)
